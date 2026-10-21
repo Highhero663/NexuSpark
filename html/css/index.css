@@ -1,0 +1,355 @@
+body{
+    width:100%;
+    margin:0;
+    padding:0;
+    background-color:black;
+    overflow-x: hidden;
+    height:auto;
+}
+h1{
+    margin:0;
+    padding:0;
+    margin-left:20px;
+    color:white;
+}
+#imgHeader{
+    border-radius:50%;
+    width:100px;
+    margin-right:20px;
+}
+#header{
+    display:flex;
+    align-items: center;
+}
+header{
+    width:100%;
+    height:200px;
+    justify-items: center;
+    align-content: center;
+}
+nav{
+    width:100%;
+    height:50px;
+    justify-items:center;
+    color:white;
+    align-content: center;
+}
+ul{
+    display:flex;
+    list-style-type: none;
+    padding:0;
+}
+li{
+    margin:0 20px;
+}
+main{
+    width:200%;
+    height:800px;
+    background-color:black;
+}
+#carrusel{
+    display:flex;
+    height:100%;
+    width:100%;
+    transform:translateX(0%);
+}
+.item{
+    min-width:50%;
+}
+#imagen1{
+    height:100%;
+    width:50%;
+    justify-content:center;
+}
+.alinearAlCentro{
+    margin:0 10%;
+    height:100%;
+    border:1px lightgray solid;
+}
+#divImagen1{
+    z-index:-1;
+    width:100%;
+    height:100%;
+}
+#atras{
+    position:absolute;
+    float:left;
+    z-index:1;
+    width:90px;
+    height:90px;
+    top:600px;
+    left:5%;
+    border-radius:50%;
+    background-color:lightgray;
+}
+#adelante{
+    position:absolute;
+    z-index:1;
+    width:90px;
+    height:90px;
+    top:600px;
+    right:5%;
+    border-radius:50%;
+    background-color:lightgray;
+}
+#img2{
+    width:100%;
+}
+#btnDescargar{
+    position:relative;
+    font-size:24px;
+    height:50px;
+    width:160px;
+    left:46%;
+    bottom:10%;
+}
+#imagen2{
+    height:100%;
+    width:50%;
+}
+
+#quienesSomos{
+    display:flex;
+    background-color:black;
+    padding:0 50px;
+    gap:30px;
+}
+.quienesSomos{
+    width:50%;
+    background-color: black;
+    text-align:center;
+    align-self: center;
+}
+h2{
+    text-transform: uppercase;
+    color:white;
+}
+p{
+    color:white;
+    font-size:18px;
+}
+footer{
+    position:relative;
+    top:20px;
+    background-color:black;
+    display:flex;
+}
+.footer{
+    width:50%;
+    height:auto;
+    text-align:center;
+    margin:0 20px;
+}
+h3{
+    color:white;
+}
+.pFooter{
+    font-size:10px;
+}
+.imgFooter{
+    position:relative;
+    top:4px;
+    width:15px;
+    margin-right:3px;
+}
+a{
+    text-decoration: none;
+    color:white;
+}
+.avanzar{
+    width:100%;
+}
+@media screen and (max-width:1700px){
+    ul{
+        margin-right:15%;
+    }
+    main{
+        width:200%;
+        height:600px;
+    }
+    #header{
+        margin-right:18%;
+    }
+    .alinearAlCentro{
+        margin:0 5%;
+        width:70%;
+        }
+    #atras{
+        top:500px;
+        left:1%;
+        width:60px;
+        height:60px;
+    }
+    #adelante{
+        top:500px;
+        right:21%;
+        width:60px;
+        height:60px;
+    }
+    h2{
+        font-size:16px;
+    }
+    p{
+        font-size: 12px;
+    }
+    #btnDescargar{
+        left:37%;
+        bottom:9%;
+        font-size:20px;
+        width:120px;
+        height:40px;
+    }
+    .footer{
+        width:38%;
+    }
+    #quienesSomos{
+        padding:0 0px;
+        gap:0px;
+    }
+}
+@media screen and (max-width:1500px){
+    
+        #atras{
+            top:525px;
+            left:0%;
+        }
+    #adelante{
+        top:525px;
+        right:20%;
+    }
+    .footer{
+        width:37%;
+    }
+}
+@media screen and (max-width:1200px){
+    #atras{
+        width:50px;
+        height:50px;
+    }
+    #adelante{
+        width:50px;
+        height:50px;
+    }
+    #btnDescargar{
+        font-size:16px;
+        width:120px;
+    }
+    .footer{
+        width:37%;
+    }
+}
+@media screen and (max-width:1100px){
+    #atras{
+        width:50px;
+        height:50px;
+    }
+    #adelante{
+        width:50px;
+        height:50px;
+    }
+    .footer{
+        width:36%;
+    }
+}
+@media screen and (max-width:900px){
+    #atras{
+        top:430px;
+        width:45px;
+        height:45px;
+    }
+    #adelante{
+        top:430px;
+        width:45px;
+        height:45px;
+    }
+    main{
+        height:400px;
+    }
+    #btnDescargar{
+        font-size:12px;
+        height:30px;
+        width:80px;
+        left:36%;
+        bottom:9%;
+    }
+    
+}
+@media screen and (max-width:800px){
+    h2{
+        font-size:12px;
+    }
+    p{
+        font-size:8px;
+    }
+}
+@media screen and (max-width:600px){
+    nav{
+        height:120px;
+    }
+    ul{
+        flex-direction:column;
+        gap:20px;
+    }
+    .footer{
+        width:33%;
+    }
+}
+@media screen and (max-width:550px){
+    #atras{
+        top:500px;
+        width:45px;
+        height:45px;
+    }
+    #adelante{
+        top:500px;
+        width:45px;
+        height:45px;
+    }
+}
+@media screen and (max-width:500px){
+    #imgHeader{
+        width:60px;
+        margin-right:10px;
+    }
+    header{
+        height:100px;
+    }
+    #atras{
+        width:30px;
+        height:30px;
+        top:360px;
+    }
+    #adelante{
+        width:30px;
+        height:30px;
+        top:360px;
+    }
+    main{
+        height:300px;
+    }
+    
+    .footer{
+        width:33%;
+    }
+    
+    #btnDescargar{
+        font-size:8px;
+        height:15px;
+        width:60px;
+    }
+}
+@media screen and (max-width:400px){
+    #imgHeader{
+        width:40px;
+        margin-right:5px;
+    }
+    h1{
+        font-size:24px;
+    }
+    #btnDescargar{
+        left:33%;
+    }
+    .footer{
+        width:30%;
+    }
+}
